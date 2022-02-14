@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.left {
+  flex: 0.5;
+  padding-left: 100px;
+  text-align: center;
+}
+.left .text {
+  font-weight: 500;
+}
+.icon {
+  margin-right: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.right {
+  flex: 2;
+  background-color: darkgoldenrod;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.project {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 50px;
+}
+.amount {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+.desc {
+  font-weight: 500;
+  font-size: 14px;
+}
+@media screen and (max-width: 480px) {
+  .container {
+    flex-direction: column;
+  }
+  .left {
+    padding: 0;
+  }
+  .right {
+    flex: 1;
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .project {
+    padding: 10px 20px;
+  }
+}
